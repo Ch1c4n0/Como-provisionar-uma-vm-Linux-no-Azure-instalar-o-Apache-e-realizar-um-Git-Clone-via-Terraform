@@ -56,7 +56,7 @@ resource "azurerm_linux_virtual_machine" "myvmlinuxvm1" {
       "sudo apt install -y apache2",
       "sudo apt install -y git",
       "sudo mkdir -p /var/www/app",
-      "sudo git -C /var/www/app/ clone https://Ch1c4n0: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@github.com/Ch1c4n0/public_html.git",
+      "sudo git -C /var/www/app/ clone https://Ch1c4n0:TOKEN@github.com/Ch1c4n0/public_html.git",
       "sudo mv /var/www/app/public_html /var/www/public_html",
       "sudo sed -i 's/html/public_html/' /etc/apache2/sites-available/000-default.conf",
       "sudo a2ensite 000-default.conf",
